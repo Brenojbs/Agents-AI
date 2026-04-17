@@ -1,0 +1,26 @@
+sources:
+  postgres-azure:
+    kind: postgres
+    host: localhost
+    port: 5432
+    user: postgres
+    password: postgres
+    database: agent_estoque
+
+tools:
+  search-all-products-inventory:
+    kind: postgres-sql
+    source: postgres-azure
+    description: Search for products in the inventory by name.
+    parameters:
+      - name: search_term
+        type: string
+        description: The term you search for in product name.
+    statement: |
+      SELECT nome, categoria, preco, status_ativo, total_stock 
+      FROM produto
+      WHERE nome ILIKE '%' || ($1) || '%'
+
+toolsets:
+  produtos: 
+    - search-all-products-inventory
