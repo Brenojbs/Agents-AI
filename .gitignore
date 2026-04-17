@@ -1,0 +1,65 @@
+# 🔐 Variáveis de ambiente
+.env
+.env.*
+*.env
+
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Ambiente virtual Lab
+.lab-*/
+.lab_*/
+.labenv/
+.lab*/
+
+# Ambiente virtual
+venv/
+.venv/
+env/
+ENV/
+
+# Distribuição / build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+
+# IDEs / Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# 🧪 Testes / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# 🐳 Docker
+*.pid
+*.seed
+
+# 📦 Banco de dados local (se usar arquivo)
+*.sqlite3
+
+# 🔑 Chaves / credenciais
+*.pem
+*.key
+
+# 🚀 Arquivos temporários
+tmp/
+temp/
+
+# 📁 Configs locais
+config.local.yaml
+config.dev.yaml
