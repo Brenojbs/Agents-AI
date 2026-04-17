@@ -13,6 +13,7 @@ __pycache__/
 .lab-*/
 .lab_*/
 .labenv/
+labenv/
 .lab*/
 
 # Ambiente virtual
